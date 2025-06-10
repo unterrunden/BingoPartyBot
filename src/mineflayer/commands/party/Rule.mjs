@@ -57,8 +57,6 @@ export default {
       );
     }
 
-    // TODO: update rules (both data & usage system/mechanism)
-    // bot.chat("/pc --- Bingo Brewers Rules (Outdated)---");
     if (!splasher) {
       bot.chat("/pc --- Bingo Brewers Rules ---", VerbosityLevel.Minimal);
       await bot.utils.delay(bot.utils.minMsgDelay);
