@@ -1,13 +1,17 @@
 {
-    "1": "Do not ask when a splash is. It's when you get pinged in #splashes.",
-    "2": "No discrimination or derogatory language.",
-    "3": "Don't be obnoxious (e.g. loud in VC, spamming).",
-    "4": "Advertising is prohibited. This includes external splashes.",
-    "5": "Don't spread or engage in exploits.",
-    "6": "No inappropriate content, emojis, or reactions.",
-    "7": "Splashers cannot accept monetary (ingame or irl) donations.",
+    "1": "Do not ask when a splash is. It's when you get pinged in #⁠splashes",
+    "1added": "You can get the role (@Splash Pings) for that in the #reaction-roles channel in the server. In addition, you can react on a splash if you need one."
+    "2": "Please do not leech on a non bingo profile unless the lobby is NOT full.",
+    "3": "No advertising other splashes or Discord servers.",
+    "4": "No racism nor disrespect towards others.",
+    "5": "No inappropriate emojis or reactions.",
+    "6": "No NSFW comments or posts.",
+    "7": "No excessive spamming",
+    "8": "No conduct in game that'd result in a ban on HYPIXEL.",
     "a": "Use common sense; don't argue for loopholes. You will still be punished.",
     "ad": "Advertising is prohibited. This includes external splashes.",
     "advertising": "Advertising is prohibited. This includes external splashes.",
-    "splash": "Do not ask when a splash is. It's when you get pinged in #splashes."
-  }
+    "splash": "Do not ask when a splash is. It's when you get pinged in ⁠splashes."
+    "change": "Rules are due to change and be edited by staff.",
+    "changes": "Rules are due to change and be edited by staff."
+}
