@@ -72,6 +72,16 @@ class Utils {
     return this.rulesList;
   }
 
+  async getSplasherRulesList() {
+    if (this.splasherRulesList.length === 0)
+      this.splasherRulesList = await import(
+        `../../data/bingoBrewersSplasherRules.json?cacheBust=${Date.now()}`,
+        { with: { type: "json" } }
+      );
+    this.splasherRulesList = this.splasherRulesList.default;
+    return this.splasherRulesList;
+  }
+  
   refreshRulesList() {
     setInterval(async () => {
       try {
@@ -82,6 +92,23 @@ class Utils {
           }
         );
         this.rulesList = configModule.default; // Access the default export of the JSON module
+        // DEBUG: console.log("Allowlist updated:", allowlist);
+      } catch (error) {
+        console.error("Error updating allowlist:", error);
+      }
+    }, 10000);
+  }
+
+  refreshSplasherRulesList() {
+    setInterval(async () => {
+      try {
+        const configModule = await import(
+          `../../data/bingoBrewersSplasherRules.json?cacheBust=${Date.now()}`,
+          {
+            with: { type: "json" },
+          }
+        );
+        this.splasherRulesList = configModule.default; // Access the default export of the JSON module
         // DEBUG: console.log("Allowlist updated:", allowlist);
       } catch (error) {
         console.error("Error updating allowlist:", error);
